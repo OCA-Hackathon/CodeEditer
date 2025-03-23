@@ -1,15 +1,15 @@
-# setup.shで実行
+### setup.shで実行
 chmod +x setup.sh
 ./setup.sh
 
-# コンテナを停止
+### コンテナを停止
 docker-compose down
 
-# キャッシュを使わずに再ビルド
+### キャッシュを使わずに再ビルド
 docker-compose build --no-cache
 
-# コンテナを起動
+### コンテナを起動
 docker-compose up -d
 
-# コンテナに接続
+### コンテナに接続
 docker-compose exec code-server bash
