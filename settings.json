@@ -1,0 +1,29 @@
+{
+    "go.useLanguageServer": true,
+    "go.languageServerExperimentalFeatures": {
+        "diagnostics": true
+    },
+    "gopls": {
+        "usePlaceholders": true,
+        "completionDocumentation": true,
+        "deepCompletion": true,
+        "matcher": "fuzzy",
+        "analyses": {
+            "fillstruct": true,
+            "staticcheck": true,
+            "unusedparams": true
+        }
+    },
+    "[go]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "editor.suggestSelection": "first",
+    "editor.fontSize": 12,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": false,
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "workbench.colorTheme": "Dark+"
+}

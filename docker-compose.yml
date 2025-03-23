@@ -1,0 +1,13 @@
+services:
+  code-server:
+    build:
+      context: .
+      # プラットフォーム指定を削除して自動検出に任せる
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./project:/home/coder/project
+      - ./config:/home/coder/.config
+    environment:
+      - TZ=Asia/Tokyo
+    restart: unless-stopped
